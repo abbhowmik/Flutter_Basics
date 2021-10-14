@@ -1,3 +1,4 @@
+import 'package:firstapp/pages/otp_login_page.dart';
 import 'package:firstapp/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'pages/home_page.dart';
@@ -23,7 +24,8 @@ class myApp extends StatelessWidget {
         darkTheme: ThemeData(brightness: Brightness.dark),
         initialRoute: '/',
         routes: {
-          '/': (context) => LoginPage(),
+          // ignore: prefer_const_constructors
+          '/': (context) => OtpLoginPage(),
           MyRoutes.HomeRoutes: (context) => HomePage(),
           MyRoutes.LoginRoutes: (context) => LoginPage(),
         });

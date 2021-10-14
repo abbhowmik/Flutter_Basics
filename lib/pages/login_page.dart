@@ -34,11 +34,14 @@ class _LoginPageState extends State<LoginPage> {
           key: _formKey,
           child: Column(
             children: [
+              // ignore: prefer_const_constructors
               SizedBox(height: 30),
               Image.asset("assets/images/welcome.jpg", fit: BoxFit.cover),
+              // ignore: prefer_const_constructors
               SizedBox(height: 10),
               Text(
                 "Welcome $name",
+                // ignore: prefer_const_constructors
                 style: TextStyle(fontSize: 20),
               ),
               Padding(
@@ -47,6 +50,7 @@ class _LoginPageState extends State<LoginPage> {
                   // ignore: duplicate_ignore
                   children: [
                     TextFormField(
+                      // ignore: prefer_const_constructors
                       decoration: InputDecoration(
                           hintText: "Enter Username", labelText: "Username"),
                       validator: (value) {
@@ -63,6 +67,7 @@ class _LoginPageState extends State<LoginPage> {
                     SizedBox(height: 5),
                     TextFormField(
                       obscureText: true,
+                      // ignore: prefer_const_constructors
                       decoration: InputDecoration(
                           hintText: "Enter Password", labelText: "Password"),
                       validator: (value) {
