@@ -19,13 +19,14 @@ class myApp extends StatelessWidget {
         themeMode: ThemeMode.light,
         theme: ThemeData(
           primarySwatch: Colors.cyan,
+
           fontFamily: GoogleFonts.lato().fontFamily,
         ),
         darkTheme: ThemeData(brightness: Brightness.dark),
         initialRoute: '/',
         routes: {
           // ignore: prefer_const_constructors
-          '/': (context) => OtpLoginPage(),
+          '/': (context) => LoginPage(),
           MyRoutes.HomeRoutes: (context) => HomePage(),
           MyRoutes.LoginRoutes: (context) => LoginPage(),
         });
